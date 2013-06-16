@@ -36,11 +36,11 @@ And here are the results:
 
 ### Input signal
 
-<img src="https://raw.github.com/mikolalysenko/phase-unwrap/master/example/input.svg">
+<img src="https://mikolalysenko.github.io/phase-unwrapr/example/input.svg">
 
 ### Unwrapped signal
 
-<img src="https://raw.github.com/mikolalysenko/phase-unwrap/master/example/unwrapped.svg">
+<img src="https://mikolalysenko.github.io/phase-unwrap/example/unwrapped.svg">
 
 
 ## Install
