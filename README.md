@@ -1,4 +1,4 @@
-phase-unwrap
+  phase-unwrap
 ============
 1D phase unwrapping
 
@@ -36,11 +36,11 @@ And here are the results:
 
 ### Input signal
 
-<img src="example/input.svg">
+<img src="https://raw.github.com/mikolalysenko/phase-unwrap/master/example/input.svg">
 
 ### Unwrapped signal
 
-<img src="example/unwrapped.svg">
+<img src="https://raw.github.com/mikolalysenko/phase-unwrap/master/example/unwrapped.svg">
 
 
 ## Install
