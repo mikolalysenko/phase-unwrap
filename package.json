@@ -1,0 +1,45 @@
+{
+  "name": "phase-unwrap",
+  "version": "0.0.0",
+  "description": "Phase unwrapping for ndarrays",
+  "main": "unwrap.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ndarray-fill": "~0.0.0",
+    "ndarray": "~0.2.4",
+    "tape": "~1.0.4",
+    "plotter": "~0.4.1"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/phase-unwrap.git"
+  },
+  "keywords": [
+    "phase",
+    "unwrap",
+    "analytic",
+    "continuation",
+    "complex",
+    "angle",
+    "arg",
+    "ndarray",
+    "signal",
+    "dsp",
+    "audio"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "c3c4fb46eb21437e46c107f83da71088a86123c1",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/phase-unwrap/issues"
+  }
+}
