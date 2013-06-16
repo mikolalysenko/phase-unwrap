@@ -36,7 +36,7 @@ And here are the results:
 
 ### Input signal
 
-<img src="https://mikolalysenko.github.io/phase-unwrapr/example/input.svg">
+<img src="https://mikolalysenko.github.io/phase-unwrap/example/input.svg">
 
 ### Unwrapped signal
 
