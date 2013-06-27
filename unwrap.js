@@ -28,14 +28,32 @@ function unwrapImpl(data, ptr, stride, n) {
   }
 }
 
+function unwrapImplGetter(data, ptr, stride, n) {
+  var pi = Math.PI
+  var pphase = modf(data.get(ptr)), shift = 0
+  ptr += stride
+  for(var i=1; i<n; ++i, ptr+=stride) {
+    var cphase = modf(data.get(ptr))
+    var d = cphase - pphase
+    if(d < -pi) {
+      shift += tau
+    } else if(d > pi) {
+      shift -= tau
+    }
+    data.set(ptr, cphase + shift)
+    pphase = cphase
+  }
+}
+
 function unwrapPhase(signal) {
   if(signal.shape.length !== 1) {
     throw new Error("Invalid shape for signal")
   }
-  if(signal.stride[0] === 0) {
-    return 0
+  if("generic" === signal.dtype) {
+    unwrapImplGetter(signal.data, signal.offset, signal.stride[0], signal.shape[0])
+  } else {
+    unwrapImpl(signal.data, signal.offset, signal.stride[0], signal.shape[0])
   }
-  unwrapImpl(signal.data, signal.offset, signal.stride[0], signal.shape[0])
   return signal
 }
 

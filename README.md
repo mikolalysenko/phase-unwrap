@@ -42,7 +42,6 @@ And here are the results:
 
 <img src="https://mikolalysenko.github.io/phase-unwrap/example/unwrapped.svg">
 
-
 ## Install
 
     npm install phase-unwrap
